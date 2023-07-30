@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+.footerdiv {
+    margin: 0 3rem;
+    display: flex;
+    padding: 3.5rem 0;
+    justify-content: space-between;
+}
+
+.footerheading {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.footermaindiv {
+    /* background-color: #3A98B9; */
+    background-color: #b1f3f3;
+    color: white;
+    text-shadow: 0px 0px 3px rgb(239, 243, 241);
+
+    background-image: linear-gradient(315deg, #2c8686 10%, #1a2162 74%);
+
+    font-family: 'Libre Baskerville';
+}
+
+.innerdiv1 p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.innerdiv2 p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}

@@ -1,21 +1,37 @@
 import React from "react";
 import styles from "./header.module.css";
+import Image from "next/image";
+import Logo from "../../assets/Logotop.png";
 
 const Header = () => {
   return (
-    <div>
-    <div className={styles.maincontainer}>
-      <div className={styles.logo}>
-        <h3>LOGO</h3>
+    <div className={styles.main}>
+      <div className={styles.maincontainer}>
+        <div className={styles.logo}>
+          <div>
+            <Image 
+            className={styles.logoimg} 
+            src={Logo} />
+          </div>
+          <div>
+            <h1>Dr. Mishra's Laboratory</h1>
+          </div>
+        </div>
+        <div className={styles.innercontainer}>
+          <div className={styles.nav}>
+            <h3> Home</h3>
+          </div>
+          <div className={styles.nav}>
+            <h3> About US</h3>
+          </div>
+          <div className={styles.nav}>
+            <h3> Our Products</h3>
+          </div>
+          <div className={styles.nav}>
+            <h3> Contact Us</h3>
+          </div>
+        </div>
       </div>
-      <div className={styles.innercontainer}>
-        <h3> HOME</h3>
-        <h3> ABOUT US</h3>
-        <h3> OUR PRODUCTS</h3>
-        <h3> CONTACT US</h3>
-      </div>
-      
-    </div>
     </div>
   );
 };
